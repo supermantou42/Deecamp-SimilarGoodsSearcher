@@ -4,7 +4,7 @@ from PIL import Image
 import numpy as np
 import os, io
 
-classes_dir = '/data/code/supermantou/flask/PTNET/classes_txt/'
+classes_dir = './PTNET/classes_txt/'
 IMAGE_SIZE = (128, 128)
 
 def class_to_idx():

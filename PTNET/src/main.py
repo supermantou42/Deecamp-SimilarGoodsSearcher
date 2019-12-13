@@ -21,7 +21,7 @@ class PTNET(object):
 
     def __init__(self):
         super(PTNET, self).__init__()
-        self.root = '/data/code/supermantou/flask/PTNET'
+        self.root = './PTNET'
         self.model_dir = os.path.join(self.root,'models')
         self.model_path = os.path.join(self.model_dir, 'last_model.pth')
         self.prototypes_path = os.path.join(self.model_dir,'BaseModel_prototype_lable_class100_smps1000.pickle')

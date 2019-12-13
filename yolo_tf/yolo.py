@@ -22,9 +22,9 @@ from keras.utils import multi_gpu_model
 class YOLO(object):
 
     def __init__(self):
-        self.classes_path = 'yolo_tf/other_classes.txt'
+        self.classes_path = 'yolo_tf/2_classes.txt'
         self.anchors_path = 'yolo_tf/yolo_anchors.txt'
-        self.model_path = 'yolo_tf/drink_and_other.h5'
+        self.model_path = 'yolo_tf/bottle_other.h5'
         self.gpu_num = 1
         self.score = 0.35
         self.iou = 0.45

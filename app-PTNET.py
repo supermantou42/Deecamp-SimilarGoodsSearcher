@@ -1,5 +1,5 @@
 import os
-os.environ['CUDA_VISIBLE_DEVICES']=''
+os.environ['CUDA_VISIBLE_DEVICES']='-1'
 from flask import Flask, render_template, jsonify, request, make_response, send_from_directory, abort
 # from TripletLossNet.TripletLoss import TripletLossNet
 from PTNET.src.main import PTNET
@@ -15,10 +15,10 @@ from PIL import Image
 
 app = Flask(__name__)
 
-url_prefix = '/infer-ed58ae0d-a251-42e0-aa9a-329181df32d6'
-root_url = 'https://jupyter-uaitrain-bj2.ucloud.cn' + url_prefix
-# url_prefix = '/prefix'
-# root_url = 'http://127.0.0.1:5000'
+# url_prefix = '/infer-ed58ae0d-a251-42e0-aa9a-329181df32d6'
+# root_url = 'https://jupyter-uaitrain-bj2.ucloud.cn' + url_prefix
+url_prefix = '/prefix'
+root_url = 'http://127.0.0.1:5000'
 
 UPLOAD_FOLDER = 'static/uploads'
 SKU_URL_PREFIX = root_url + '/static/sku_face/'

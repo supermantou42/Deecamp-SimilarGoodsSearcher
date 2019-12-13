@@ -1,0 +1,6 @@
+static/uploads/*.jpg
+static/uploads/yolo/*.jpg
+*.h5
+__pycache__/
+*.py[cod]
+.idea/
